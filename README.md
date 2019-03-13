@@ -1,7 +1,7 @@
 # Relatório das atividades:
 
 ## Dados:
-![](perfil.jpeg)
+![](perfil.jpg)
 - **Nome:** Matheus Gadêlha Lima
 - **Curso:** Engenharia de computação - 415247
 
