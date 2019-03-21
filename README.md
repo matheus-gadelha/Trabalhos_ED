@@ -44,15 +44,15 @@
 
 ## Labirinto 1:
 - O que eu fiz
-    - Ainda estou na parte inicial do código,  tentando corrigir os erros de lógica.
+    - A partir do  código do professor eu conseguir fazer a geração do labirinto, mas fazer o caminho eu não conseguir. Apenas conseguir mostrar uma parte do caminho.
 - Com quem e como eu fiz
-    - Estou tentando fazer ajuda dos colegas da sala.
+    - Fiz sozinho, mas era a todo momento comparando o meu código com o código do professor 
 - O que aprendi e sei fazer
-    - As condições basicas para furar o labirinto.
+    - As condições basicas para furar o labirinto e fazer a verificação a partir dos vizinhos
 - O que tenho dificuldade ainda
-    - Saber se pode furar para não entrar em loop infinito.
+    - Fazer o caminho do ponto de partida até o final.
 - Quanto tempo levei pra fazer a atividade
-    - Até agora levei umas 2 horas para fazer tudo que fiz.
+    - Levei dois dias mais o fim de semanda para corrigir os erros e gerar o labirinto
 
 ## Fractais: 
 ### Árvore:
