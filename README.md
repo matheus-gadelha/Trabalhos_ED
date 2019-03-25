@@ -57,7 +57,12 @@
 ## Fractais: 
 ### Árvore:
 - O que eu fiz
+    - Fiz todo o código.
 - Com quem e como eu fiz
+    - A maior parte eu fiz sozinho, só precisei de ajuda para entender a bibliotece, e para isso eu vi o vídeo do professor.
 - O que aprendi e sei fazer
+    - A fazer os desenhos
 - O que tenho dificuldade ainda
+    - Na chamada recursiva.
 - Quanto tempo levei pra fazer a atividade
+    - 3 horas.

@@ -16,6 +16,7 @@ void fractal(float x, float y, float ang, float lado){
     float fx = x + lado * xm_cos(ang); //Descobre a coordenada do x final
     float fy = y - lado * xm_sin(ang); //Descobre a coordenada do y final
     
+    
     if(lado > 70.0){
         int galhos = xm_rand(0, 100);
         xs_color((XColor){139, 69, 19});
@@ -44,6 +45,7 @@ void fractal(float x, float y, float ang, float lado){
         
         
     }
+    
 
     xd_thick_line(x, y, fx, fy, 2); /* desenha a linha */
     x_step("arvore");
