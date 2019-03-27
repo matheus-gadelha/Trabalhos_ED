@@ -66,3 +66,39 @@
     - Na chamada recursiva.
 - Quanto tempo levei pra fazer a atividade
     - 3 horas.
+
+### Floco de Neve:
+- O que eu fiz
+    - Fiz quase todo o código.
+- Com quem e como eu fiz
+    - Fiz quase tudo sozinho, só na ultima parte que eu pedi ajuda a um colega da sala.
+- O que aprendi e sei fazer
+    - Manipulação da ângulos em uma função recursiva.
+- O que tenho dificuldade ainda
+    - A chamada recursiva.
+- Quanto tempo levei para fazer a atividade
+    - 2 horas
+
+### Circulos:
+- O que eu fiz
+    - Fiz todo o código.
+- Com quem e como eu fiz
+    - Fiz toda a atividade sozinho
+- O que aprendi e sei fazer
+    - Manipulação da ângulos em uma função recursiva.
+- O que tenho dificuldade ainda
+    - A chamada recursiva
+- Quanto tempo levei para fazer a atividade
+    - 30 minutos
+
+### Trigo:
+- O que eu fiz
+    - Fiz todo o código
+- Com quem e como eu fiz
+    - Com ajuda de um colega ele me disse pra fazer de uma forma diferente. Eu tava tentando fazer de cima pra baixo e ele disse pra fazer de baixo pra cima.
+- O que aprendi e sei fazer
+    - Manipulação da ângulos em uma função recursiva.
+- O que tenho dificuldade ainda
+    - Na chamada recursiva.
+- Quanto tempo levei para fazer a atividade
+    - 1 hora
