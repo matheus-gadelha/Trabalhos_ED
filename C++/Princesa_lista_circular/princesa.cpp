@@ -47,9 +47,7 @@ struct Node{
             Node * aux = node;
             do{
                 printf("%d ", aux->valor);
-
-                if((espada != nullptr) && (aux == espada))
-                    printf(">");
+                
                 aux = aux->proximo;
             }while(aux != node);
         }
@@ -88,7 +86,7 @@ struct Node{
                 }
             }
 
-        }while(node != node);
+        }while(node->proximo != node->anterior);
             return;
 
     }
@@ -121,7 +119,7 @@ int main(){
 
     Node * selecionado = lista->selecionar(lista, escolhido);
     printf("Selecionado %d \n", selecionado->valor);
-
+    
     lista->matar(lista, escolhido);
     lista->imprimir(lista);
 }

@@ -102,3 +102,30 @@
     - Na chamada recursiva.
 - Quanto tempo levei para fazer a atividade
     - 1 hora
+
+
+## C++
+### Princesa Lista Circular:
+- O que eu fiz:
+    - Uma parte do código;
+- Com quem e como fiz:
+    - Com um colega da sala;
+- O que aprendi e sei fazer:
+    - Criar uma lista circular;
+- O que tenho dificuldade ainda:
+    - Caminhar pela lista e remover elementos;
+- Quanto tempo levei para fazer a atividade:
+    - 2 dias;
+
+## Ordenação
+### Selection, Bubble e Insertion:
+- O que eu fiz:
+    - Fiz todos os códigos;
+- Com quem e como fiz:
+    - Fiz sozinho e depois de terminado comparei com códigos da internet;
+- O que aprendi e sei fazer:
+    - Ordenar vetores sem usar recurção;
+- O que tenho dificuldade ainda:
+    - Nesses algoritmos, nada;
+- Quanto tempo levei para fazer a atividade:
+    - 30 minutos;
