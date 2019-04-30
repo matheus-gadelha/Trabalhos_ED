@@ -129,5 +129,3 @@
     - Nesses algoritmos, nada;
 - Quanto tempo levei para fazer a atividade:
     - 30 minutos;
-
-### Merge:
