@@ -74,6 +74,8 @@ int main(){
         }else if(comando == "show"){
 
             
+        }else if(comando == "in"){
+            
         }
    }
 
