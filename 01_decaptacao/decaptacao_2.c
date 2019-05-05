@@ -3,6 +3,7 @@
 const int morto = 0;
 
 int prox_vivo(int v[], int tamanho, int inicio){
+    int i;
     int posicao = (inicio + i) % tamanho;
     while(v[posicao] == morto){
         posicao = (posicao + 1) % tamanho;
