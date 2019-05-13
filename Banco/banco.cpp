@@ -94,7 +94,10 @@ struct Banco{
     }
 
     void tolerancia(){
-        
+        for(list<Cliente*>::iterator it = this->fila_espera.begin();
+            it != this->fila_espera.end(); it++){
+                
+            }   
     }
 
 };
