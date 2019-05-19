@@ -187,18 +187,41 @@ int main(){
             banco.iniciar_caixas(caixas);
 
         }else if(comando == "show"){
+            cout << "Caixas: ";
+            banco.mostrar_caixas();
 
+            cout << "\n";
+            cout << "Entrada ";
+            banco.mostrar_fila_entrada();
+
+            cout << "\n";
+            cout << "Saida: ";
+            banco.mostrar_fila_saida();
+            
+            cout << endl;
             
         }else if(comando == "in"){
             string nome;
             int pac;
             int docs;
+
+            ui >> nome;
+            ui >> pac;
+            ui >> docs;
+
+            banco.adicionar_cliente(new Cliente(pac, docs, nome));
+
           
         }else if(comando == "tic"){
             banco.processar_documentos();
 
         }else if(comando == "finalizar"){
+            cout << "Documentos recebidos: " << banco.docs_recebidos << endl;
+            cout << "Documentos perdidos: " << banco.docs_perdidos << endl;
 
+
+        }else{
+            cout << "Comando inválido" << endl;
         }
    }
 
