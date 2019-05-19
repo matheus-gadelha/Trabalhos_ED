@@ -205,9 +205,9 @@ int main(){
             int pac;
             int docs;
 
-            ui >> nome;
             ui >> pac;
             ui >> docs;
+            ui >> nome;
 
             banco.adicionar_cliente(new Cliente(pac, docs, nome));
 
