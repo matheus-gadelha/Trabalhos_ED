@@ -12,7 +12,7 @@ struct Cliente{
     string nome;
     int paciencia;
     int documentos;
-
+   
     Cliente(int paciencia, int documentos, string nome){
         this->paciencia = paciencia;
         this->documentos = documentos;
@@ -24,6 +24,9 @@ struct Banco{
     vector<Cliente*> caixas;
     list<Cliente*> fila_espera;
     queue<Cliente*> fila_saida;
+    int docs_recebidos;
+    int docs_perdidos;
+
 
     void mostrar_caixas(){
         for(int i = 0; i < this->caixas.size(); i++){
@@ -96,17 +99,65 @@ struct Banco{
     void tolerancia(){
         for(list<Cliente*>::iterator it = this->fila_espera.begin();
             it != this->fila_espera.end(); it++){
-                
+                if(*it != nullptr){
+                    if((*it)->paciencia == 0){
+                       this->docs_perdidos += (*it)->documentos;
+                       this->fila_espera.erase(it);
+                       this->fila_saida.push(*it);
+                    }
+
+                }else{
+                    (*it)->paciencia -= 1;
+                }
             }   
+    }
+
+    void processar_documentos(){
+        for(int i = 0; i < this->caixas.size(); i++){
+            
+            if(this->caixas.at(i) == nullptr){ //Verifica se o caixa está vazio
+
+                if(this->fila_espera.size() != 0){ //Verifica se tem alguem na fila de espera
+                    this->caixas.at(i) = this->fila_espera.front(); //O primeiro na fila de espera vai pro caixa
+                    this->fila_espera.pop_front(); //Tira o cliente da fila de espera, pois ele agora está no caixa
+
+                }
+
+            }else{
+
+                if(this->caixas.at(i)->documentos != 0){
+                    this->caixas.at(i)->documentos -= 1;
+                    this->docs_recebidos += 1;
+
+                    if(this->caixas.at(i)->documentos == 0){
+                        this->fila_saida.push(this->caixas.at(i));
+                        this->caixas.at(i) == nullptr;
+                    }
+
+                }else{
+                    this->fila_saida.push(this->caixas.at(i));
+                    this->caixas.at(i) == nullptr;
+                }
+
+            }
+        }
+
+        this->tolerancia();
+        this->limpar_saida();
+    }
+
+    void adicionar_cliente(Cliente* cl){
+        this->fila_espera.push_back(cl);
+    }
+
+    void adicionar_saida(Cliente* cl){
+        this->fila_saida.push(cl);
     }
 
 };
 
 
 int main(){
-   
-    int docs_recebidos = 0;
-    int docs_perdidos = 0;
     Banco banco;
 
    while(true){
@@ -130,7 +181,10 @@ int main(){
             break;
 
         }else if(comando == "init"){
-            
+            int caixas;
+            ui >> caixas;
+
+            banco.iniciar_caixas(caixas);
 
         }else if(comando == "show"){
 
@@ -141,6 +195,7 @@ int main(){
             int docs;
           
         }else if(comando == "tic"){
+            banco.processar_documentos();
 
         }else if(comando == "finalizar"){
 
