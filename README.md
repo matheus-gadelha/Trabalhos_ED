@@ -129,3 +129,28 @@
     - Nesses algoritmos, nada;
 - Quanto tempo levei para fazer a atividade:
     - 30 minutos;
+
+## Banco
+- O que eu fiz:
+    - Todas as funcionalidades pedidas;
+- Com quem e como fiz:
+    - Fiz com auxílio de um colega de turma;
+- O que aprendi e sei fazer:
+    - Utilizar ponteiros;
+- O que tenho dificuldade ainda:
+    - Manter o controle das referencias dos ponteiros;
+- Quanto tempo levei para fazer a atividade:
+    - 1 semana;
+
+##Editor
+- O que eu fiz:
+    - Ainda estou implementando a inserção e remoção;
+- Com quem e como fiz:
+    - Com auxilio de um colega de turma;
+- O que aprendi e sei fazer:
+    - Mover o iterador pela lista;
+- O que tenho dificuldade ainda:
+    - Referencias;
+- Quanto tempo levei para fazer a atividade:
+    - 4 dias;
+
